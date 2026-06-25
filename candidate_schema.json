@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CandidateRecord",
+  "type": "object",
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "description": "Unique identifier of the candidate"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "experience_years": {
+      "type": "number",
+      "minimum": 0
+    },
+    "location": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "behavioral_signals": {
+      "type": "object",
+      "properties": {
+        "loyalty": { "type": "number" },
+        "response_rate": { "type": "number" },
+        "interview_attendance": { "type": "number" }
+      },
+      "required": ["loyalty", "response_rate", "interview_attendance"]
+    }
+  },
+  "required": ["candidate_id", "name", "title", "experience_years", "skills", "location"]
+}

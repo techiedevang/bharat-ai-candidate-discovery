@@ -1,0 +1,6 @@
+{
+  "name": "BHARAT AI Candidate Discovery",
+  "description": "An intelligent predictive ranking engine with multilingual regional language translation and gamified sourcing verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
